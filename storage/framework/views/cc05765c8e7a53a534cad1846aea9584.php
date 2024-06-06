@@ -53,7 +53,8 @@
                     <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="<?php echo e(route('home')); ?>">Home</a>
                     <a class="font-medium text-gray-50 sm:py-6" href="<?php echo e(route('aboutus')); ?>" aria-current="page">About
                         Us</a>
-                    <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">Announcement</a>
+                    <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6"
+                        href="<?php echo e(route('announcement')); ?>">Announcement</a>
                     <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">Performance
                         Indicators</a>
                     <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">Activities</a>
@@ -240,7 +241,7 @@
                             href="<?php echo e(route('aboutus')); ?>">About Us</a>
                     </p>
                     <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400"
-                            href="#">Announcement</a></p>
+                            href="<?php echo e(route('announcement')); ?>">Announcement</a></p>
                     <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400" href="#">Performance
                             Indicators</a>
                     </p>

@@ -53,8 +53,10 @@
                     <a class="font-medium text-gray-50 sm:py-6" href="{{ route('home') }}" aria-current="page">Home</a>
                     <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="{{ route('aboutus') }}">About
                         Us</a>
-                    <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">Announcement</a>
-                    <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">Performance
+                    <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6"
+                        href="{{ route('announcement') }}">Announcement</a>
+                    <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6"
+                        href="{{ route('performanceindicators') }}">Performance
                         Indicators</a>
                     <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">Activities</a>
                     <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">PPA's</a>
@@ -81,7 +83,8 @@
 
     <!-- ========== MAIN CONTENT ========== -->
     <main class="bg-white" id="content">
-        <div class="max-w-[85rem] min-h-[75rem] mx-auto py-10 px-4 sm:px-6 lg:px-8">
+
+        <div class="max-w-[85rem] mx-auto py-8 px-4 sm:px-6 lg:px-8">
             <!-- Slider -->
             <div data-hs-carousel='{
             "loadingClasses": "opacity-0",
@@ -145,6 +148,34 @@
             </div>
             <!-- End Slider -->
         </div>
+
+        {{-- <div class="md:max-w-3xl md:mx-auto py-6 sm:py-4 lg:py-6 px-6 sm:px-4 lg:px-6">
+            <p class="relative text-center text-lg sm:text-xl md:text-2xl md:leading-normal font-bold text-gray-800">
+                9<span class="align-super text-sm">th</span> ALALUM NHS COMPLETION CEREMONY MESSAGES</p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div class="space-y-2">
+                    <img class="w-full size-40 object-cover"
+                        src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                        alt="Image Description">
+                </div>
+                <div class="space-y-2">
+                    <img class="w-full size-40 object-cover"
+                        src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
+                        alt="Image Description">
+                </div>
+                <div class="space-y-2">
+                    <img class="w-full size-40 object-cover"
+                        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                        alt="Image Description">
+                </div>
+                <div class="space-y-2">
+                    <img class="w-full size-40 object-cover"
+                        src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
+                        alt="Image Description">
+                </div>
+            </div>
+        </div> --}}
+
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
 
@@ -171,11 +202,13 @@
                 <div class="mt-3 grid space-y-3 text-sm">
                     <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400"
                             href="{{ route('home') }}">Home</a></p>
-                    <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400" href="#">About Us</a>
+                    <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400"
+                            href="{{ route('aboutus') }}">About Us</a>
                     </p>
                     <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400"
-                            href="#">Announcement</a></p>
-                    <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400" href="#">Performance
+                            href="{{ route('announcement') }}">Announcement</a></p>
+                    <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400"
+                            href="{{ route('performanceindicators') }}">Performance
                             Indicators</a>
                     </p>
                     <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400" href="#">Activities</a>

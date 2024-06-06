@@ -15,4 +15,14 @@ class HomeController extends Controller
     {
         return view('home.aboutus');
     }
+
+    public function announcement()
+    {
+        return view('home.announcement');
+    }
+
+    public function performanceindicators()
+    {
+        return view('home.performanceindicators');
+    }
 }

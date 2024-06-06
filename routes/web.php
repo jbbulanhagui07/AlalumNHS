@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
+Route::get('/announcement', [HomeController::class, 'announcement'])->name('announcement');
+Route::get('/performanceindicators', [HomeController::class, 'performanceindicators'])->name('performanceindicators');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

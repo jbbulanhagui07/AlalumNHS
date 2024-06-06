@@ -53,10 +53,15 @@
                     <a class="font-medium text-gray-50 sm:py-6" href="<?php echo e(route('home')); ?>" aria-current="page">Home</a>
                     <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="<?php echo e(route('aboutus')); ?>">About
                         Us</a>
+<<<<<<< HEAD
                     <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6"
                         href="<?php echo e(route('announcement')); ?>">Announcement</a>
                     <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6"
                         href="<?php echo e(route('performanceindicators')); ?>">Performance
+=======
+                    <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">Announcement</a>
+                    <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">Performance
+>>>>>>> 72bbe70 (Add system to git)
                         Indicators</a>
                     <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">Activities</a>
                     <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">PPA's</a>
@@ -83,8 +88,12 @@
 
     <!-- ========== MAIN CONTENT ========== -->
     <main class="bg-white" id="content">
+<<<<<<< HEAD
 
         <div class="max-w-[85rem] mx-auto py-8 px-4 sm:px-6 lg:px-8">
+=======
+        <div class="max-w-[85rem] min-h-[75rem] mx-auto py-10 px-4 sm:px-6 lg:px-8">
+>>>>>>> 72bbe70 (Add system to git)
             <!-- Slider -->
             <div data-hs-carousel='{
             "loadingClasses": "opacity-0",
@@ -148,9 +157,12 @@
             </div>
             <!-- End Slider -->
         </div>
+<<<<<<< HEAD
 
         
 
+=======
+>>>>>>> 72bbe70 (Add system to git)
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
 
@@ -177,6 +189,7 @@
                 <div class="mt-3 grid space-y-3 text-sm">
                     <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400"
                             href="<?php echo e(route('home')); ?>">Home</a></p>
+<<<<<<< HEAD
                     <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400"
                             href="<?php echo e(route('aboutus')); ?>">About Us</a>
                     </p>
@@ -184,6 +197,13 @@
                             href="<?php echo e(route('announcement')); ?>">Announcement</a></p>
                     <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400"
                             href="<?php echo e(route('performanceindicators')); ?>">Performance
+=======
+                    <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400" href="#">About Us</a>
+                    </p>
+                    <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400"
+                            href="#">Announcement</a></p>
+                    <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400" href="#">Performance
+>>>>>>> 72bbe70 (Add system to git)
                             Indicators</a>
                     </p>
                     <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400" href="#">Activities</a>

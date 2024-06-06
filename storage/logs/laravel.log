@@ -3496,6 +3496,7 @@ Did you mean one of these?
 #54 /home/tharsis/AlalumNHS/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #55 {main}
 "} 
+<<<<<<< HEAD
 [2024-07-08 15:43:24] local.ERROR: View [home.announcement] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [home.announcement] not found. at /home/tharsis/AlalumNHS/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:139)
 [stacktrace]
 #0 /home/tharsis/AlalumNHS/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
@@ -3549,3 +3550,5 @@ Did you mean one of these?
 #48 /home/tharsis/AlalumNHS/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #49 {main}
 "} 
+=======
+>>>>>>> 72bbe70 (Add system to git)

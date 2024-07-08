@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alalum National High School</title>
-    <?php echo app('Illuminate\Foundation\Vite')(['resources/css/app.css', 'resources/js/app.js']); ?>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class=" bg-royalblue text-white">
@@ -16,11 +16,11 @@
         <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
             aria-label="Global">
             <div class="flex flex-shrink-0 items-center justify-between p-2">
-                <div class="flex p-1 flex-shrink-1"><a href="<?php echo e(route('home')); ?>"><img src="images/AlalumNHS-Logo.png"
+                <div class="flex p-1 flex-shrink-1"><a href="{{ route('home') }}"><img src="images/AlalumNHS-Logo.png"
                             alt="Logo" height="75" width="75"></a>
                 </div>
                 <div class="flex flex-col items-center justify-start">
-                    <a class="flex text-xl font-semibold" href="<?php echo e(route('home')); ?>" aria-label="Brand">Alalum National
+                    <a class="flex text-xl font-semibold" href="{{ route('home') }}" aria-label="Brand">Alalum National
                         High School</a>
                     <span class="flex-none"> Alalum, San Pascual, Batangas </span>
                 </div>
@@ -50,18 +50,12 @@
                 class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
                 <div
                     class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-100">
-                    <a class="font-medium text-gray-50 sm:py-6" href="<?php echo e(route('home')); ?>" aria-current="page">Home</a>
-                    <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="<?php echo e(route('aboutus')); ?>">About
+                    <a class="font-medium text-gray-300 sm:py-6" href="{{ route('home') }}">Home</a>
+                    <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="{{ route('aboutus') }}">About
                         Us</a>
-<<<<<<< HEAD
-                    <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6"
-                        href="<?php echo e(route('announcement')); ?>">Announcement</a>
-                    <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6"
-                        href="<?php echo e(route('performanceindicators')); ?>">Performance
-=======
-                    <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">Announcement</a>
+                    <a class="font-medium text-gray-50  sm:py-6" href="{{ route('announcement') }}"
+                        aria-current="page">Announcement</a>
                     <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">Performance
->>>>>>> 72bbe70 (Add system to git)
                         Indicators</a>
                     <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">Activities</a>
                     <a class="font-medium text-gray-300 hover:text-gray-400 sm:py-6" href="#">PPA's</a>
@@ -88,81 +82,71 @@
 
     <!-- ========== MAIN CONTENT ========== -->
     <main class="bg-white" id="content">
-<<<<<<< HEAD
 
-        <div class="max-w-[85rem] mx-auto py-8 px-4 sm:px-6 lg:px-8">
-=======
-        <div class="max-w-[85rem] min-h-[75rem] mx-auto py-10 px-4 sm:px-6 lg:px-8">
->>>>>>> 72bbe70 (Add system to git)
-            <!-- Slider -->
-            <div data-hs-carousel='{
-            "loadingClasses": "opacity-0",
-            "isAutoPlay": true }'
-                class="relative">
-                <div
-                    class="hs-carousel relative overflow-hidden content-center w-full min-h-56 sm:min-h-80 md:min-h-80 lg:min-h-96 xl:min-h-128 bg-white rounded-lg">
+        <!-- Card Blog -->
+        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <!-- Grid -->
+            <div class="grid lg:grid-cols-2 gap-6">
+                <!-- Card -->
+                <a class="group sm:flex rounded-xl" href="#">
                     <div
-                        class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-                        <div class="hs-carousel-slide">
-                            <div class="flex justify-center h-full bg-gray-100 p-3">
-                                <img class="object-cover h-full w-full rounded-t-xl" src="images/Faculty.jpeg"
-                                    alt="Image Description">
+                        class="flex-shrink-0 relative rounded-xl overflow-hidden h-[200px] sm:w-[250px] sm:h-[350px] w-full">
+                        <img class="size-full absolute top-0 start-0 object-cover"
+                            src="images/AlalumOplanBalikEskwela.jpeg" alt="Image Description">
+                    </div>
+
+                    <div class="grow">
+                        <div class="p-4 flex flex-col h-full sm:p-6">
+                            <div class="mb-3">
+                                <p
+                                    class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800">
+                                    Announcements
+                                </p>
                             </div>
-                        </div>
-                        <div class="hs-carousel-slide">
-                            <div class="flex justify-center h-full bg-gray-200 p-3">
-                                <img class="h-auto rounded-t-xl" src="images/Faculty-stairs.jpeg"
-                                    alt="Image Description">
-                            </div>
-                        </div>
-                        <div class="hs-carousel-slide">
-                            <div class="flex justify-center h-full bg-gray-300 p-3">
-                                <img class="h-auto rounded-t-xl" src="images/Faculty2.jpeg" alt="Image Description">
-                            </div>
+                            <h3 class="text-lg sm:text-2xl font-semibold text-gray-800 group-hover:text-blue-600">
+                                Oplan Balik Eskwela 2024
+                            </h3>
+                            <p class="mt-2 text-gray-600">
+                                Public Assistance Action Center Committee (OBE-PAAC)
+                            </p>
+
                         </div>
                     </div>
-                </div>
+                </a>
+                <!-- End Card -->
 
-                <button type="button"
-                    class="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 rounded-s-lg">
-                    <span class="text-2xl" aria-hidden="true">
-                        <svg class="flex-shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="m15 18-6-6 6-6"></path>
-                        </svg>
-                    </span>
-                    <span class="sr-only">Previous</span>
-                </button>
-                <button type="button"
-                    class="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 rounded-e-lg">
-                    <span class="sr-only">Next</span>
-                    <span class="text-2xl" aria-hidden="true">
-                        <svg class="flex-shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="m9 18 6-6-6-6"></path>
-                        </svg>
-                    </span>
-                </button>
+                <!-- Card -->
+                <a class="group sm:flex rounded-xl" href="#">
+                    <div
+                        class="flex-shrink-0 relative rounded-xl overflow-hidden h-[200px] sm:w-[250px] sm:h-[350px] w-full">
+                        <img class="size-full absolute top-0 start-0 object-cover" src="images/AlalumEnrollment.jpeg"
+                            alt="Image Description">
+                    </div>
+                    <div class="grow">
+                        <div class="p-4 flex flex-col h-full sm:p-6">
+                            <div class="mb-3">
+                                <p
+                                    class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800">
+                                    Announcements
+                                </p>
+                            </div>
+                            <h3 class="text-lg sm:text-2xl font-semibold text-gray-800 group-hover:text-blue-600">
+                                Enrollment for S.Y. 2024-2025
+                            </h3>
+                            <p class="mt-2 text-gray-600">
+                                Offers: Special Science Program , (STE) Science Technology Engineering (formerly ESEP),
+                                and Regular Program
+                            </p>
 
-                <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2">
-                    <span
-                        class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer"></span>
-                    <span
-                        class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer"></span>
-                    <span
-                        class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer"></span>
-                </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- End Card -->
             </div>
-            <!-- End Slider -->
+            <!-- End Grid -->
         </div>
-<<<<<<< HEAD
+        <!-- End Card Blog -->
 
-        
-
-=======
->>>>>>> 72bbe70 (Add system to git)
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
 
@@ -173,7 +157,7 @@
         <!-- Grid -->
         <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-5 mb-10">
             <div class="col-span-full lg:col-span-2 lg:block">
-                <a class="flex-none text-xl font-semibold" href="<?php echo e(route('home')); ?>" aria-label="Brand">Alalum
+                <a class="flex-none text-xl font-semibold" href="{{ route('home') }}" aria-label="Brand">Alalum
                     National High
                     School</a>
                 <p class="mt-3 text-xs sm:text-sm text-gray-100">Alalum National High School is an institution that
@@ -188,22 +172,13 @@
 
                 <div class="mt-3 grid space-y-3 text-sm">
                     <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400"
-                            href="<?php echo e(route('home')); ?>">Home</a></p>
-<<<<<<< HEAD
+                            href="{{ route('home') }}">Home</a></p>
                     <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400"
-                            href="<?php echo e(route('aboutus')); ?>">About Us</a>
+                            href="{{ route('aboutus') }}">About Us</a>
                     </p>
                     <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400"
-                            href="<?php echo e(route('announcement')); ?>">Announcement</a></p>
-                    <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400"
-                            href="<?php echo e(route('performanceindicators')); ?>">Performance
-=======
-                    <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400" href="#">About Us</a>
-                    </p>
-                    <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400"
-                            href="#">Announcement</a></p>
+                            href="{{ route('announcement') }}">Announcement</a></p>
                     <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400" href="#">Performance
->>>>>>> 72bbe70 (Add system to git)
                             Indicators</a>
                     </p>
                     <p><a class="inline-flex gap-x-2 text-gray-100 hover:text-gray-400" href="#">Activities</a>
@@ -251,4 +226,3 @@
 </body>
 
 </html>
-<?php /**PATH /home/tharsis/AlalumNHS/resources/views/home/index.blade.php ENDPATH**/ ?>
